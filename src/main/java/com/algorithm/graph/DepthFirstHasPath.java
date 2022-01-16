@@ -19,7 +19,7 @@ public class DepthFirstHasPath {
         List<Pair<String, String>> listEdges = new ArrayList<Pair<String, String>>();
         Map<String, List<String>> mapEdges = new HashMap<String, List<String>>();
         Set<String> visited = new HashSet<String>();
-        listEdges.add(new Pair<String, String>("a", "b"));
+        listEdges.add(new Pair<String, String>("a", "b")); 
         listEdges.add(new Pair<String, String>("a", "f"));
         listEdges.add(new Pair<String, String>("a", "c"));
         listEdges.add(new Pair<String, String>("b", "c"));
