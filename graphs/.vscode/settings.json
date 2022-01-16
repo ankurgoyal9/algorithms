@@ -1,0 +1,4 @@
+{
+    "java.configuration.updateBuildConfiguration": "automatic",
+    "maven.executable.path": "/opt/homebrew/Cellar/maven/3.8.4/bin/mvn"
+}
