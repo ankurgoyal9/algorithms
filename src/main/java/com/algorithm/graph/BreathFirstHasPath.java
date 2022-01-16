@@ -22,14 +22,14 @@ public class BreathFirstHasPath {
         Map<String, List<String>> mapEdges = new HashMap<String, List<String>>();
         Set<String> visited = new HashSet<String>();
         Queue<String> queue = new ArrayBlockingQueue<String>(1000);
-        listEdges.add(new Pair("a", "b"));
-        listEdges.add(new Pair("a", "f"));
-        listEdges.add(new Pair("a", "c"));
-        listEdges.add(new Pair("b", "c"));
-        listEdges.add(new Pair("c", "d"));
-        listEdges.add(new Pair("d", "e"));
-        listEdges.add(new Pair("e", "f"));
-        listEdges.add(new Pair("i", "k"));
+        listEdges.add(new Pair<String, String>("a", "b"));
+        listEdges.add(new Pair<String, String>("a", "f"));
+        listEdges.add(new Pair<String, String>("a", "c"));
+        listEdges.add(new Pair<String, String>("b", "c"));
+        listEdges.add(new Pair<String, String>("c", "d"));
+        listEdges.add(new Pair<String, String>("d", "e"));
+        listEdges.add(new Pair<String, String>("e", "f"));
+        listEdges.add(new Pair<String, String>("i", "k"));
 
         System.out.println("List of Edge:" + listEdges);
         adjacencyMatrix(listEdges, mapEdges);
