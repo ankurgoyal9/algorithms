@@ -1,2 +1,2 @@
 # algorithms
-General Algorithm
+General Algorithms
