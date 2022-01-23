@@ -23,6 +23,13 @@
     <jacoco.unit-tests.limit.method-complexity>5</jacoco.unit-tests.limit.method-complexity>
   </properties>
   <dependencies>
+
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.13.2</version>
+    </dependency>
+
     <dependency>
       <groupId>org.javatuples</groupId>
       <artifactId>javatuples</artifactId>
