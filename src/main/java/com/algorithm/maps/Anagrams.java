@@ -3,10 +3,14 @@ package com.algorithm.maps;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Map.Entry;
 
+/*
+https://www.hackerrank.com/challenges/sherlock-and-anagrams/problem?isFullScreen=true&h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=dictionaries-hashmaps
+*/
 public class Anagrams {
     public static void main(String[] args) {
-        System.out.println(anagramCount("ifailuhkqq"));
+        System.out.println(anagramCount("zjekimenscyiamnwlpxytkndjsygifmqlqibxxqlauxamfviftquntvkwppxrzuncyenacfivtigvfsadtlytzymuwvpntngkyhw"));
     }
 
     public static int anagramCount(String s) {
@@ -25,12 +29,19 @@ public class Anagrams {
                     map.get(i).put(subStr, 1);
                 } else {
                     map.get(i).put(subStr, map.get(i).get(subStr) + 1);
-                    count++;
                 }
             }
         }
 
-        System.out.println(map);
+        for (int i = 1; i <=  s.length(); i++) {
+            HashMap subMap = map.get(i);
+            int sum =  subMap.entrySet().stream().filter(x -> (Integer)(((Entry)x).getValue())>1)
+                            .mapToInt(x -> ((Integer)(((Entry)x).getValue()))*(((Integer)(((Entry)x).getValue()))-1)/2)
+                            .sum();
+            count += sum;
+        }
+
+        //System.out.println(map);
         return count;
     }
 }
