@@ -31,7 +31,7 @@ public class Anagrams {
                     map.get(i).put(subStr, map.get(i).get(subStr) + 1);
                 }
             }
-        }
+        } 
 
         for (int i = 1; i <=  s.length(); i++) {
             HashMap subMap = map.get(i);

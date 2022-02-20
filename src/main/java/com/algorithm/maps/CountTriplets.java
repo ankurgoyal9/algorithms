@@ -43,7 +43,7 @@ public class CountTriplets {
             insertIntoMap(leftMap, val);
         }
         return numberOfGeometricPairs;
-    }
+    } 
 
     private static Map<Long, Long> getOccurenceMap(List<Long> test) {
         Map<Long, Long> occurenceMap = new HashMap<>();

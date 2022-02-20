@@ -30,7 +30,7 @@ public class NewYearChaos {
         });
 
         bufferedReader.close();
-    }
+    } 
 
     static void minimumBribes(int[] q) {
         int bribes = 0;
